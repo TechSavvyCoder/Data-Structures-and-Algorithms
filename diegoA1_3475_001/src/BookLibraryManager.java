@@ -16,24 +16,25 @@ public class BookLibraryManager {
             scanner.nextLine();
 
             switch (choice) {
-                case 1 -> addBook(library);
-                case 2 -> viewBooks(library);
-                case 3 -> removeBook(library);
-                case 4 -> clearBooks(library);
-                case 5 -> updateBook(library);
+            	case 0: mainMenu(); break;
+                case 1: addBook(library); break;
+                case 2: viewBooks(library); break;
+                case 3: removeBook(library); break;
+                case 4: clearBooks(library); break;
+                case 5: updateBook(library); break;
 //                case 6 -> sortBooks(library);
-                case 7 -> {
+                case 7: 
                     System.out.println("\nThank you for using the Book Library Manager! Goodbye!");
                     start = false;
-                }
-                default -> System.out.println("\nInvalid option! Please try again.");
+                    break;
+                default: System.out.println("\nInvalid option! Please try again.");
             }
         }
 		
 	}
 	
 	public static void mainMenu() {
-		System.out.println("\n═══════════════════════════════════════");
+		System.out.println("═══════════════════════════════════════");
         System.out.println("          BOOK LIBRARY MANAGER           ");
         System.out.println("═══════════════════════════════════════");
         System.out.println("\t1 ➤ Add a Book");
@@ -124,7 +125,6 @@ public class BookLibraryManager {
 		library.replace(position, new Book(title, author, year, isbn));
 		System.out.println("\nBook "+ position +" has been Updated Successfully!");
 	}
-
 }
 
 
