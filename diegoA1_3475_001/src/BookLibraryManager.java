@@ -37,6 +37,7 @@ public class BookLibraryManager {
 		System.out.println("═══════════════════════════════════════");
         System.out.println("          BOOK LIBRARY MANAGER           ");
         System.out.println("═══════════════════════════════════════");
+        System.out.println("\t0 ➤ Show menu");
         System.out.println("\t1 ➤ Add a Book");
         System.out.println("\t2 ➤ View All Books");
         System.out.println("\t3 ➤ Remove a Book");
